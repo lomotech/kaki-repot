@@ -1,0 +1,35 @@
+<ion-view class="repot" view-title="JPJ">
+  <ion-content>
+    <form name="jpjForm" ng-submit="submit()">
+      <div class="list">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Name" ng-model="jpjData.nama">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Identity Number</span>
+          <input type="text" placeholder="Identity Number" ng-model="jpjData.identity">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Phone Number</span>
+          <input type="text" placeholder="Phone Number" ng-model="jpjData.phone">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Date & Time</span>
+          <input type="text" placeholder="Date & Time" ng-model="jpjData.date">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Location</span>
+          <input type="text" placeholder="Location" ng-model="jpjData.location">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Report</span>
+          <textarea rows="5" placeholder="Report"></textarea>
+        </label>
+        <button ng-disabled="jpjForm.$invalid" class="button button-full button-positive">
+          Submit Report
+        </button>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
